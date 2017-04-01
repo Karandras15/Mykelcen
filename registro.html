@@ -2,7 +2,7 @@
 <html >
 <head>
   <meta charset="UTF-8">
-  <title>Login Form</title>
+  <title>Registro</title>
   
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 <style>
@@ -92,20 +92,38 @@ input:focus { box-shadow: inset 0 -5px 45px rgba(100,100,100,0.4), 0 1px 1px rgb
   <div class="login">
 	<h1>Mykelcen</h1>
     <form method="post">
-    	Usuario<input class="introducir" type="text" name="u" placeholder="Usuario" required="required" /><br>
+    	Usuario
 		<br>
-        Contraseña<input class="introducir" type="password" name="p" placeholder="Contraseña" required="required" /><br>
 		<br>
-		Edad<input class="introducir" type="text" name="e" placeholder="Edad" required="required" /><br>
+		<input class="introducir" type="text" name="u" placeholder="Usuario" required="required" /><br>
 		<br>
-		Genero<br><br><input type="radio" name="gender" value="male" checked> Masculino
-		<input type="radio" name="gender" value="female"> Femenino<br>
+        Contraseña
 		<br>
-        Direcion<input class="introducir" type="password" name="d" placeholder="Direccion" required="required" /><br>
+		<br>
+		<input class="introducir" type="password" name="p" placeholder="Contraseña" required="required" />
+		<br>
+		<br>
+		Email
+		<br>
+		<br>
+		<input class="introducir" type="email" name="email" placeholder="Email" required="required" /><br>
+		<br>
+		Edad
+		<br>
+		<br>		
+		<input class="introducir" type="number" name="edad" placeholder="Edad" required="required" /><br>
+		<br>
+        Dirección
+		<br>
+		<br>
+		<input class="introducir" type="text" name="direccion" placeholder="Direccion" required="required" /><br>
 		<br>
         <button type="submit" class="btn btn-primary btn-block btn-large">Registrarse</button>
-		<a href="index.html"><input class="boton" type="button" value="Ingresar"/></a>
+		<br>
     </form>
+	<form action="index.html">
+		<input class="btn btn-primary btn-block btn-large" type="submit" value="Ingresar" />
+	</form>
 </div>
   
     <script src="js/index.js"></script>
