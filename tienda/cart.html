@@ -2,36 +2,44 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Tienda - Carrito</title>
+    <title>Twitter Bootstrap shopping cart</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
     <!-- Bootstrap styles -->
     <link href="assets/css/bootstrap.css" rel="stylesheet"/>
     <!-- Customize styles -->
     <link href="style.css" rel="stylesheet"/>
     <!-- font awesome styles -->
 	<link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet">
+		<!--[if IE 7]>
+			<link href="css/font-awesome-ie7.min.css" rel="stylesheet">
+		<![endif]-->
+
+		<!--[if lt IE 9]>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+
 	<!-- Favicons -->
     <link rel="shortcut icon" href="assets/ico/favicon.ico">
   </head>
 <body>
+
+
 <!--
 Lower Header Section 
 -->
 <div class="container">
+<div id="gototop"> </div>
 <header id="header">
 <div class="row">
 	<div class="span4">
 	<h1>
-	<a class="logo" href="list-view.html"><span>Twitter Bootstrap ecommerce template</span> 
+	<a class="logo" href="index.html"><span>Twitter Bootstrap ecommerce template</span> 
 		<img src="assets/img/logo-bootstrap-shoping-cart.png" alt="bootstrap sexy shop">
 	</a>
 	</h1>
-	</div>
-	<div class="span4">
-	</div>
-	<div class="span4 alignR">
-	<p><br> <strong> Soporte (24/7) :  944 444 444 </strong><br><br></p>
-	</div>
+	</div>	
 </div>
 </header>
 
@@ -48,24 +56,30 @@ Navigation Bar Section
 		  </a>
 		  <div class="nav-collapse">
 			<ul class="nav">
-			  <li class=""><a href="list-view.html">Página principal	</a></li>
+			  <li class=""><a href="index.html">Home	</a></li>
+			  <li class=""><a href="list-view.html">List View</a></li>
+			  <li class=""><a href="grid-view.html">Grid View</a></li>
+			  <li class=""><a href="three-col.html">Three Column</a></li>
+			  <li class=""><a href="four-col.html">Four Column</a></li>
+			  <li class=""><a href="general.html">General Content</a></li>
 			</ul>
+			<form action="#" class="navbar-search pull-left">
+			  <input type="text" placeholder="Search" class="search-query span2">
+			</form>
 			<ul class="nav pull-right">
-			<li class=""><a href="cart.html"><span class="icon-shopping-cart"></span> Ver carrito</a><li>
-			<li class=""><a href="register.html"><span class="icon-edit"></span>Registrarse</a></li>
 			<li class="dropdown">
-				<a data-toggle="dropdown" class="dropdown-toggle" href="#"><span class="icon-lock"></span> Acceder <b class="caret"></b></a>
+				<a data-toggle="dropdown" class="dropdown-toggle" href="#"><span class="icon-lock"></span> Login <b class="caret"></b></a>
 				<div class="dropdown-menu">
 				<form class="form-horizontal loginFrm">
-				  <div class="control-group"> <!-- LOGIN PHP ALGO-->
-					<input type="text" class="span2" id="email" placeholder="Email">
+				  <div class="control-group">
+					<input type="text" class="span2" id="inputEmail" placeholder="Email">
 				  </div>
 				  <div class="control-group">
-					<input type="password" class="span2" id="contraseña" placeholder="Contraseña">
+					<input type="password" class="span2" id="inputPassword" placeholder="Password">
 				  </div>
 				  <div class="control-group">
 					<label class="checkbox">
-					<input type="checkbox"> Recordarme
+					<input type="checkbox"> Remember me
 					</label>
 					<button type="submit" class="shopBtn btn-block">Sign in</button>
 				  </div>
@@ -83,7 +97,8 @@ Body Section
 	<div class="row">
 	<div class="span12">    
 	<div class="well well-small">
-		<h1>Carro de la compra <small class="pull-right"> Items en el carro de la compra </small></h1>
+		<!-- numero items en el carro -->
+		<h1>Check Out <small class="pull-right"> 2 Items are in the cart </small></h1>
 	<hr class="soften"/>	
 
 	<table class="table table-bordered table-condensed">
@@ -91,6 +106,7 @@ Body Section
                 <tr>
                   <th>Product</th>
                   <th>Description</th>				  
+                  <th>Avail.</th>
                   <th>Unit price</th>
                   <th>Qty </th>
                   <th>Total</th>
@@ -104,6 +120,7 @@ Body Section
 				  <!-- descripcion -->
                   <td>Items name here<br>Carate : 22<br>Model : n/a</td>
 					<!-- icono disponible o no -->                  
+                  <td><span class="shopBtn"><span class="icon-ok"></span></span> </td>
 				  <!-- precio unidad -->
                   <td>$50.00</td>
                   <td>
@@ -119,37 +136,19 @@ Body Section
                 </tr>				              
 				 <tr>
 				 <!-- coste total -->
-                  <td colspan="6" class="alignR">Precio total:	</td>
-                  <td class="label label-primary" id="precioTotal"> $448.42</td>
+                  <td colspan="6" class="alignR">Total products:	</td>
+                  <td class="label label-primary"> $448.42</td>
                 </tr>
 				</tbody>
             </table><br/>		
           
 			
 	<!-- botones de volver y continuar -->
-	<a href="list-view.html" class="shopBtn btn-large"><span class="icon-arrow-left"></span> Seguir comprando </a>
-	<a href="login.html" class="shopBtn btn-large pull-right">Siguiente <span class="icon-arrow-right"></span></a>
-	<!-- PHP-->
+	<a href="products.html" class="shopBtn btn-large"><span class="icon-arrow-left"></span> Continue Shopping </a>
+	<a href="login.html" class="shopBtn btn-large pull-right">Next <span class="icon-arrow-right"></span></a>
 
 </div>
-<footer class="footer">
-<div class="row-fluid">
-<div class="span2">
- </div>
-<div class="span3">
-<h5>Información</h5>
-<a href="contact.html">CONTACTO</a><br>
-<a href="#">TÉRMINOS Y CONDICIONES</a><br>
-<a href="about_us.html">SOBRE NOSOTROS</a><br>
- </div>
- <div class="span6">
-<h5>Tienda</h5>
-Tienda operativa desde 2017, productos de alta calidad a bajo precio.
- </div>
- </div>
-</footer>
 </div>
-
 </div>
 
 
