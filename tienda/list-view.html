@@ -2,48 +2,36 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Twitter Bootstrap shopping cart</title>
+    <title>Tienda - Principal</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
     <!-- Bootstrap styles -->
     <link href="assets/css/bootstrap.css" rel="stylesheet"/>
     <!-- Customize styles -->
     <link href="style.css" rel="stylesheet"/>
     <!-- font awesome styles -->
 	<link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet">
-		<!--[if IE 7]>
-			<link href="css/font-awesome-ie7.min.css" rel="stylesheet">
-		<![endif]-->
-
-		<!--[if lt IE 9]>
-			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-		<![endif]-->
-
 	<!-- Favicons -->
     <link rel="shortcut icon" href="assets/ico/favicon.ico">
   </head>
 <body>
-<!-- 
-	Upper Header Section 
--->
-
-
 <!--
 Lower Header Section 
 -->
 <div class="container">
-  <header id="header">
-  <div class="row">
+<header id="header">
+<div class="row">
 	<div class="span4">
 	<h1>
-	<a class="logo" href="index.html"><span>Twitter Bootstrap ecommerce template</span> 
+	<a class="logo" href="list-view.html"><span>Twitter Bootstrap ecommerce template</span> 
 		<img src="assets/img/logo-bootstrap-shoping-cart.png" alt="bootstrap sexy shop">
 	</a>
 	</h1>
 	</div>
+	<div class="span4">
+	</div>
 	<div class="span4 alignR">
-	  </div>
+	<p><br> <strong> Soporte (24/7) :  944 444 444 </strong><br><br></p>
+	</div>
 </div>
 </header>
 
@@ -60,30 +48,24 @@ Navigation Bar Section
 		  </a>
 		  <div class="nav-collapse">
 			<ul class="nav">
-			  <li class=""><a href="index.html">Home	</a></li>
-			  <li class="active"><a href="list-view.html">List View</a></li>
-			  <li class=""><a href="grid-view.html">Grid View</a></li>
-			  <li class=""><a href="three-col.html">Three Column</a></li>
-			  <li class=""><a href="four-col.html">Four Column</a></li>
-			  <li class=""><a href="general.html">General Content</a></li>
+			  <li class=""><a href="list-view.html">Página principal	</a></li>
 			</ul>
-			<form action="#" class="navbar-search pull-left">
-			  <input type="text" placeholder="Search" class="search-query span2">
-			</form>
 			<ul class="nav pull-right">
+			<li class=""><a href="cart.html"><span class="icon-shopping-cart"></span> Ver carrito</a><li>
+			<li class=""><a href="register.html"><span class="icon-edit"></span>Registrarse</a></li>
 			<li class="dropdown">
-				<a data-toggle="dropdown" class="dropdown-toggle" href="#"><span class="icon-lock"></span> Login <b class="caret"></b></a>
+				<a data-toggle="dropdown" class="dropdown-toggle" href="#"><span class="icon-lock"></span> Acceder <b class="caret"></b></a>
 				<div class="dropdown-menu">
 				<form class="form-horizontal loginFrm">
-				  <div class="control-group">
-					<input type="text" class="span2" id="inputEmail" placeholder="Email">
+				  <div class="control-group"> <!-- LOGIN PHP ALGO-->
+					<input type="text" class="span2" id="email" placeholder="Email">
 				  </div>
 				  <div class="control-group">
-					<input type="password" class="span2" id="inputPassword" placeholder="Password">
+					<input type="password" class="span2" id="contraseña" placeholder="Contraseña">
 				  </div>
 				  <div class="control-group">
 					<label class="checkbox">
-					<input type="checkbox"> Remember me
+					<input type="checkbox"> Recordarme
 					</label>
 					<button type="submit" class="shopBtn btn-block">Sign in</button>
 				  </div>
@@ -101,23 +83,13 @@ Body Section
 	<div class="row">
 <div id="sidebar" class="span3">
 <div class="well well-small">
-	<!-- plantilla para cambiar entre distintos productos -->
-	<ul class="nav nav-list">
-		<li><a href="products.html"><span class="icon-chevron-right"></span>Fashion</a></li>
-		<li><a href="products.html"><span class="icon-chevron-right"></span>Watches</a></li>
-		<li><a href="products.html"><span class="icon-chevron-right"></span>Fine Jewelry</a></li>
-		<li><a href="products.html"><span class="icon-chevron-right"></span>Fashion Jewelry</a></li>
-		<li><a href="products.html"><span class="icon-chevron-right"></span>Engagement & Wedding</a></li>
-		<li><a href="products.html"><span class="icon-chevron-right"></span>Men's Jewelry</a></li>
-		<li><a href="products.html"><span class="icon-chevron-right"></span>Vintage & Antique</a></li>
-		<li><a href="products.html"><span class="icon-chevron-right"></span>Loose Diamonds </a></li>
-		<li><a href="products.html"><span class="icon-chevron-right"></span>Loose Beads</a></li>
-		<li><a href="products.html"><span class="icon-chevron-right"></span>See All Jewelry & Watches</a></li>
-		<li style="border:0"> &nbsp;</li>
-	
+	<ul class="nav nav-list"><!-- PHP PARA MOSTRAR EN ESA PÁGINA SOLO LAS DE LA CATEGORÍA -->
+		<li><a href="list-view.html"><span class="icon-chevron-right"></span>Categoría 1</a></li>
+		<li><a href="list-view.html"><span class="icon-chevron-right"></span>Categoría 2</a></li>
+		<li><a href="list-view.html"><span class="icon-chevron-right"></span>Categoría 3</a></li>		
 	</ul>
 </div>
-
+		  </ul>
 
 	</div>
 <div class="span9">
@@ -144,8 +116,8 @@ Body Section
 		<br>
 		<!-- botones para añadir al carro o ver producto -->
 		<div class="btn-group">
-		  <a href="product_details.html" class="defaultBtn"><span class=" icon-shopping-cart"></span> Add to cart</a>
-		  <a href="product_details.html" class="shopBtn">VIEW</a>
+		  <a href="product_details.html" class="defaultBtn"><span class=" icon-shopping-cart"></span> Añadir al carrito</a>
+		  <a href="product_details.html" class="shopBtn">VER</a>
 		 </div>
 			</form>
 		</div>
@@ -155,7 +127,22 @@ Body Section
 </div>
 </div>
 </div>
-
+<footer class="footer">
+<div class="row-fluid">
+<div class="span2">
+ </div>
+<div class="span3">
+<h5>Información</h5>
+<a href="contact.html">CONTACTO</a><br>
+<a href="#">TÉRMINOS Y CONDICIONES</a><br>
+<a href="about_us.html">SOBRE NOSOTROS</a><br>
+ </div>
+ <div class="span6">
+<h5>Tienda</h5>
+Tienda operativa desde 2017, productos de alta calidad a bajo precio.
+ </div>
+ </div>
+</footer>
 	<a href="#" class="gotop"><i class="icon-double-angle-up"></i></a>
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="assets/js/jquery.js"></script>
