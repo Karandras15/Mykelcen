@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Tienda - Principal</title>
+    <title>Tienda - Producto</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap styles -->
     <link href="assets/css/bootstrap.css" rel="stylesheet"/>
@@ -30,7 +30,7 @@ Lower Header Section
 	<div class="span4">
 	</div>
 	<div class="span4 alignR">
-	<p><br> <strong> Soporte (24/7) : XXX XXX XXX</strong><br><br></p>
+	<p><br> <strong> Soporte (24/7) :  944 444 444 </strong><br><br></p>
 	</div>
 </div>
 </header>
@@ -86,99 +86,88 @@ Body Section
 	<ul class="nav nav-list"><!-- PHP PARA MOSTRAR EN ESA PÁGINA SOLO LAS DE LA CATEGORÍA -->
 		<li><a href="list-view.html"><span class="icon-chevron-right"></span>Dietetico</a></li>
 		<li><a href="list-view.html"><span class="icon-chevron-right"></span>Ecologico</a></li>
-		<li><a href="list-view.html"><span class="icon-chevron-right"></span>Productos Locales</a></li>
-		<li><a href="list-view.html"><span class="icon-chevron-right"></span>Quema Grasas</a></li>		
+		<li><a href="list-view.html"><span class="icon-chevron-right"></span>Productos Locales</a></li>	
+		<li><a href="list-view.html"><span class="icon-chevron-right"></span>Quema Grasas</a></li>			
 	</ul>
 </div>
 		  </ul>
 
 	</div>
-<div class="span9">
-<div class="well well-small">
-	<!-- plantilla para cada producto -->
-	<div class="row-fluid">
-		<!-- imagen producto -->
-		<div class="span2">
-			<img src="assets/img/d.jpg" alt="">
-		</div>
-		<div class="span6">
-		<!-- info producto -->
-			<h5>Pan de coco WERZ </h5>
-			<p>
-				Producto perfecto para quienes empiezan con una dieta pero no pueden resistir la ganas de picar algo entre horas...
-			</p>
-		</div>
-		<div class="span4 alignR">
-		<form class="form-horizontal qtyFrm">
-		<!-- precio producto -->
-		<h3> 14.95€</h3>
-		<br>
-		<!-- botones para añadir al carro o ver producto -->
-		<div class="btn-group">
-		  <a href="product_details.html" class="defaultBtn"><span class=" icon-shopping-cart"></span> Añadir al carrito</a>
-		  <a href="product_details.html" class="shopBtn">VER</a>
-		 </div>
-			</form>
-		</div>
-	</div>
-	</div>
+	<div class="span9"> 
 	<div class="well well-small">
 	<div class="row-fluid">
-		<!-- imagen producto -->
-		<div class="span2">
-			<img src="assets/img/f.jpg" alt="">
-		</div>
-		<div class="span6">
-		<!-- info producto -->
-			<h5>Suplemento Vitamina D </h5>
-			<p>
-				Extra de vitamina D para tomar antes del desayuno.
-			</p>
-		</div>
-		<div class="span4 alignR">
-		<form class="form-horizontal qtyFrm">
-		<!-- precio producto -->
-		<h3> 9.95€</h3>
-		<br>
-		<!-- botones para añadir al carro o ver producto -->
-		<div class="btn-group">
-		  <a href="product_details1.html" class="defaultBtn"><span class=" icon-shopping-cart"></span> Añadir al carrito</a>
-		  <a href="product_details1.html" class="shopBtn">VER</a>
-		 </div>
-			</form>
-		</div>
-	</div>
-	</div>
-	<div class="well well-small">
-	<div class="row-fluid">
-		<!-- imagen producto -->
-		<div class="span2">
-			<img src="assets/img/e.jpg" alt="">
-		</div>
-		<div class="span6">
-		<!-- info producto -->
-			<h5>Mermelada Smileat </h5>
-			<p>
-				Mermelada baja en calorias para empezar bien las mañanas.
-			</p>
-		</div>
-		<div class="span4 alignR">
-		<form class="form-horizontal qtyFrm">
-		<!-- precio producto -->
-		<h3> 8.99€</h3>
-		<br>
-		<!-- botones para añadir al carro o ver producto -->
-		<div class="btn-group">
-		  <a href="product_details2.html" class="defaultBtn"><span class=" icon-shopping-cart"></span> Añadir al carrito</a>
-		  <a href="product_details2.shtml" class="shopBtn">VER</a>
-		 </div>
-			</form>
-		</div>
-	</div>
-	<hr class="soften">	
-	<!--fin plantilla producto -->
+			<div class="span5">
+			<!-- imagenes del producto -->
+			<div id="myCarousel" class="carousel slide cntr">
+                <div class="carousel-inner">
+                  <div class="item active">
+                   <a href="#"> <img src="assets/img/f.jpg" alt="" style="width:100%"></a>
+                  </div>
+                  <div class="item">
+                     <a href="#"> <img src="assets/img/f.jpg" alt="" style="width:100%"></a>
+                  </div>
+                  <div class="item">
+                    <a href="#"> <img src="assets/img/f.jpg" alt="" style="width:100%"></a>
+                  </div>
+                </div>
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
+            </div>
+			</div>
+			<div class="span7">
+			<!-- nombredel producto -->
+				<h3>Pan de coco WERZ</h3>
+				<hr class="soft"/>
+				
+				<form class="form-horizontal qtyFrm">
+				  <div class="control-group">
+				  <!-- precio -->
+					<label class="control-label"><span>9.95€ - 100 unid.</span></label>
+					<div class="controls">
+					<!-- cantidad a comprar -->
+					<input type="number" class="span6" placeholder="Cant.">
+					</div>
+				  </div>
+				<!-- selectores-->
+				  <div class="control-group">
+				  </div>
+				  <div class="control-group">
+					<label class="control-label"><span>Sabores</span></label>
+					<div class="controls">
+					  <select class="span11">
+						  <option>Miel</option>
+						  <option>Platano</option>
+						</select>
+					</div>
+				  </div>
+				  <!-- stock -->
+				  <h4>Stock Disponible</h4>
+				  <!-- descripcion corta -->
+				  <p>Extra de vitamina D para tomar antes del desayuno.
+				  <p>
+				  <!-- boton para añadir al carro -->
+				  <button type="submit" class="shopBtn"><span class=" icon-shopping-cart"></span> Añadir al carrito</button>
+				</form>
+			</div>
+			</div>
+				<hr class="softn clr"/>	          
+           
+            <div class="tab-pane fade active in" id="home">
+			<!-- informacion adicional -->
+			  <h4>Características del producto</h4>
+                <table class="table table-striped">
+				<tbody>
+				<!-- tabla con caracteristicas -->
+				<tr class="techSpecRow"><td class="techSpecTD1">Vitamina D extra:</td><td class="techSpecTD2">12 mg</td></tr>
+				<tr class="techSpecRow"><td class="techSpecTD1">Peso unidad:</td><td class="techSpecTD2">1gr</td></tr>
+				<tr class="techSpecRow"><td class="techSpecTD1">Peso Total:</td><td class="techSpecTD2">100gr</td></tr>
+				</tbody>
+				</table>
+
+			
+
 </div>
-</div>
+
 </div>
 <footer class="footer">
 <div class="row-fluid">
@@ -196,7 +185,12 @@ Tienda operativa desde 2017, productos de alta calidad a bajo precio.
  </div>
  </div>
 </footer>
-	<a href="#" class="gotop"><i class="icon-double-angle-up"></i></a>
+
+</div> <!-- Body wrapper -->
+
+
+
+<a href="#" class="gotop"><i class="icon-double-angle-up"></i></a>
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="assets/js/jquery.js"></script>
 	<script src="assets/js/bootstrap.min.js"></script>
